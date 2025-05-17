@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Download } from 'lucide-react';
+import TechLogo from '@/components/TechLogo';
 
 const skillCategories = [
   {
@@ -40,12 +41,17 @@ const Skills: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="glass-effect border-blue-800/50 hover:border-blue-700/70 transition-all duration-300 h-full">
+            <Card key={index} className="glass-effect border-blue-800/50 hover:border-blue-600/70 hover:shadow-lg hover:shadow-blue-900/20 transition-all duration-300 transform hover:-translate-y-1 h-full">
               <CardContent className="p-6 h-full">
                 <h3 className="text-xl font-medium text-blue-100 mb-4">{category.category}</h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                   {category.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="skill-tag">{skill}</span>
+                    <div key={skillIndex} className="flex justify-center">
+                      <TechLogo 
+                        name={skill} 
+                        className="w-8 h-8 transition-transform duration-300 hover:scale-125"
+                      />
+                    </div>
                   ))}
                 </div>
               </CardContent>
@@ -56,7 +62,7 @@ const Skills: React.FC = () => {
         <div className="flex flex-col items-center">
           <h3 className="text-2xl font-semibold mb-6 text-blue-100 text-center">Interested in my qualifications?</h3>
           <Button 
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium"
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/30"
           >
             <Download size={18} />
             Download CV

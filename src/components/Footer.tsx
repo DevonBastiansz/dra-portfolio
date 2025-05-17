@@ -13,38 +13,48 @@ const Footer: React.FC = () => {
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-300 hover:text-white transition-colors"
+              className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
               aria-label="GitHub"
             >
-              <Github size={24} />
+              <Github size={24} className="hover-glow" />
             </a>
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-300 hover:text-white transition-colors"
+              className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
               aria-label="LinkedIn"
             >
-              <Linkedin size={24} />
+              <Linkedin size={24} className="hover-glow" />
             </a>
             <a 
               href="https://twitter.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-300 hover:text-white transition-colors"
+              className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
               aria-label="Twitter"
             >
-              <Twitter size={24} />
+              <Twitter size={24} className="hover-glow" />
             </a>
           </div>
           
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
-            <a href="#home" className="text-sm text-blue-300 hover:text-white transition-colors">Home</a>
-            <a href="#about" className="text-sm text-blue-300 hover:text-white transition-colors">About</a>
-            <a href="#experience" className="text-sm text-blue-300 hover:text-white transition-colors">Experience</a>
-            <a href="#skills" className="text-sm text-blue-300 hover:text-white transition-colors">Skills</a>
-            <a href="#projects" className="text-sm text-blue-300 hover:text-white transition-colors">Projects</a>
+            {[
+              { href: "#home", label: "Home" },
+              { href: "#about", label: "About" },
+              { href: "#experience", label: "Experience" },
+              { href: "#skills", label: "Skills" },
+              { href: "#projects", label: "Projects" },
+            ].map((link, index) => (
+              <a 
+                key={index}
+                href={link.href} 
+                className="text-sm text-blue-300 hover:text-white transition-colors duration-300 link-hover"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
           
           {/* Copyright */}

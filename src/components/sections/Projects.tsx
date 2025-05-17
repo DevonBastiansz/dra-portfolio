@@ -2,7 +2,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Github } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
+import TechLogo from '@/components/TechLogo';
 
 const projectsData = [
   {
@@ -56,7 +57,7 @@ const Projects: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectsData.map((project, index) => (
-            <Card key={index} className="project-card overflow-hidden h-full flex flex-col">
+            <Card key={index} className="project-card overflow-hidden h-full flex flex-col transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-900/30">
               <div className="h-56 overflow-hidden">
                 <img 
                   src={project.screenshot} 
@@ -68,16 +69,16 @@ const Projects: React.FC = () => {
                 <h3 className="text-xl font-semibold text-blue-100 mb-2">{project.title}</h3>
                 <p className="text-blue-300 text-sm mb-3">Role: {project.role}</p>
                 <p className="text-blue-200 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-4 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="skill-tag text-xs">{tech}</span>
+                    <TechLogo key={techIndex} name={tech} className="w-6 h-6" />
                   ))}
                 </div>
               </CardContent>
               <CardFooter className="p-6 border-t border-blue-800/50 flex justify-between">
                 <Button 
                   variant="outline" 
-                  className="border-blue-600 text-blue-300 hover:bg-blue-800/50 hover:text-blue-100 flex items-center gap-2"
+                  className="border-blue-600 text-blue-300 hover:bg-blue-800/50 hover:text-blue-100 flex items-center gap-2 transition-colors duration-300"
                   asChild
                 >
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -86,10 +87,11 @@ const Projects: React.FC = () => {
                   </a>
                 </Button>
                 <Button 
-                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-300 flex items-center gap-2"
                   asChild
                 >
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={16} />
                     <span>Live Demo</span>
                   </a>
                 </Button>
@@ -101,7 +103,7 @@ const Projects: React.FC = () => {
         <div className="mt-16 text-center">
           <p className="text-blue-200 mb-5">Want to see more of my work?</p>
           <Button 
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/30"
             asChild
           >
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
