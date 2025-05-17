@@ -58,14 +58,13 @@ const TechLogo: React.FC<TechLogoProps> = ({ name, className = "" }) => {
   const logoUrl = logoMap[name] || logoMap.default;
   
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex items-center justify-center">
       <img 
         src={logoUrl} 
         alt={`${name} logo`} 
         title={name}
         className={`w-6 h-6 ${className}`}
       />
-      <span className="text-xs mt-1 text-blue-300">{name}</span>
     </div>
   );
 };

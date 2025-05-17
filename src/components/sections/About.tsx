@@ -71,28 +71,28 @@ const About: React.FC = () => {
                   href="https://github.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                  aria-label="GitHub"
                 >
-                  <Github size={20} />
-                  <span>GitHub</span>
+                  <Github size={24} className="hover-glow" />
                 </a>
                 <a 
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                  aria-label="LinkedIn"
                 >
-                  <Linkedin size={20} />
-                  <span>LinkedIn</span>
+                  <Linkedin size={24} className="hover-glow" />
                 </a>
                 <a 
                   href="https://twitter.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
+                  aria-label="Twitter"
                 >
-                  <Twitter size={20} />
-                  <span>Twitter</span>
+                  <Twitter size={24} className="hover-glow" />
                 </a>
               </div>
             </div>
