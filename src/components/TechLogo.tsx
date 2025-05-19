@@ -63,7 +63,7 @@ const TechLogo: React.FC<TechLogoProps> = ({ name, className = "" }) => {
         src={logoUrl} 
         alt={`${name} logo`} 
         title={name}
-        className={`w-16 h-16 ${className}`}
+        className={`w-15 h-15 ${className}`}
       />
     </div>
   );
