@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Download } from 'lucide-react';
 import TechLogo from '@/components/TechLogo';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const skillCategories = [
   {
@@ -28,6 +28,9 @@ const skillCategories = [
   }
 ];
 
+// Flatten all skills into a single array for the carousel
+const allSkills = skillCategories.flatMap(category => category.skills);
+
 const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-24 bg-blue-950 relative overflow-hidden">
@@ -39,24 +42,39 @@ const Skills: React.FC = () => {
       <div className="section-container relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center gradient-text">Skills & Expertise</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {skillCategories.map((category, index) => (
-            <Card key={index} className="glass-effect border-blue-800/50 hover:border-blue-600/70 hover:shadow-lg hover:shadow-blue-900/20 transition-all duration-300 transform hover:-translate-y-1 h-full">
-              <CardContent className="p-6 h-full">
-                <h3 className="text-xl font-medium text-blue-100 mb-4">{category.category}</h3>
-                <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="flex justify-center">
-                      <TechLogo 
-                        name={skill} 
-                        className="w-8 h-8 transition-transform duration-300 hover:scale-125"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Carousel 
+            opts={{ 
+              align: "start",
+              loop: true
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="py-4">
+              {allSkills.map((skill, index) => (
+                <CarouselItem key={index} className="md:basis-1/5 lg:basis-1/6 flex items-center justify-center">
+                  <div className="p-2">
+                    <TechLogo 
+                      name={skill} 
+                      className="w-12 h-12 transition-all duration-300 hover:scale-150 hover:rotate-6 opacity-80 hover:opacity-100"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex items-center justify-center gap-4 mt-8">
+              <CarouselPrevious className="relative static left-0 translate-y-0 bg-blue-800/50 hover:bg-blue-700/70 border-blue-700" />
+              <CarouselNext className="relative static right-0 translate-y-0 bg-blue-800/50 hover:bg-blue-700/70 border-blue-700" />
+            </div>
+          </Carousel>
+          
+          <div className="mt-8 flex gap-2 flex-wrap justify-center">
+            {skillCategories.map((category, idx) => (
+              <div key={idx} className="text-sm text-blue-300 px-3 py-1.5 rounded-full bg-blue-900/50 border border-blue-800/50">
+                {category.category}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col items-center">
