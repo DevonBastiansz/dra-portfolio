@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
                   <div className="p-2">
                     <TechLogo 
                       name={skill} 
-                      className="w-14 h-14 transition-all duration-300 hover:scale-150 hover:rotate-6 opacity-80 hover:opacity-100"
+                      className="w-16 h-16 transition-all duration-300 hover:scale-150 hover:rotate-6 opacity-80 hover:opacity-100"
                     />
                   </div>
                 </CarouselItem>
