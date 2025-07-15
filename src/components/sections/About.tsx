@@ -34,33 +34,33 @@ const About: React.FC = () => {
             <h3 className="text-2xl font-semibold mb-6 text-blue-100">Background & Interests</h3>
             <div className="space-y-4 text-blue-200">
               <p>
-                I'm a Computer Science student passionate about web development, machine learning, and creating 
-                user-centered digital experiences. With a strong foundation in both front-end and back-end technologies, 
-                I enjoy building applications that solve real-world problems.
+                I am a dedicated and motivated individual currently pursuing a Bachelor's degree in Computer Science 
+                at APIIT, Colombo. My interests lie in frontend web development, AI & machine learning solutions, 
+                and cybersecurity.
               </p>
               <p>
-                My academic journey has provided me with a solid theoretical understanding of computer science principles, 
-                while my personal projects and internships have allowed me to apply these concepts in practical settings.
+                With experience in React, TypeScript, and modern web technologies, I am eager to contribute positively 
+                to organizations while gaining valuable industry experience and mentorship in a professional environment.
               </p>
               <p>
-                When I'm not coding, you can find me participating in hackathons, contributing to open-source projects, 
-                or exploring the latest advancements in technology.
+                I am fluent in both English and Sinhala, and have strong skills in attention-to-detail, time management, 
+                and collaboration & teamwork.
               </p>
             </div>
             
             <h3 className="text-2xl font-semibold mt-10 mb-6 text-blue-100">Extracurricular Activities</h3>
             <ul className="list-disc list-inside space-y-3 text-blue-200 ml-2">
               <li>
-                <span className="font-medium text-blue-100">Tech Club</span> — Vice President
-                <div className="text-sm ml-5">Organized weekly workshops and tech talks</div>
+                <span className="font-medium text-blue-100">Head of Logistics</span> — Entrepreneurship Club, APIIT
+                <div className="text-sm ml-5">Dec 2024 – Present</div>
               </li>
               <li>
-                <span className="font-medium text-blue-100">Hackathon Participant</span>
-                <div className="text-sm ml-5">Participated in 5+ hackathons; won "Best UI/UX" at HackTech 2023</div>
+                <span className="font-medium text-blue-100">Senior Prefect</span> — St. Joseph's College
+                <div className="text-sm ml-5">Oct 2019 – Feb 2021</div>
               </li>
               <li>
-                <span className="font-medium text-blue-100">Open Source Contributor</span>
-                <div className="text-sm ml-5">Regular contributions to React libraries and documentation</div>
+                <span className="font-medium text-blue-100">TravelTech Hackathon 3.0</span>
+                <div className="text-sm ml-5">Organized and participated in hackathon events</div>
               </li>
             </ul>
             
@@ -68,7 +68,7 @@ const About: React.FC = () => {
               <h3 className="text-2xl font-semibold mb-6 text-blue-100">Find Me Online</h3>
               <div className="flex space-x-5">
                 <a 
-                  href="https://github.com" 
+                  href="https://devonbastiansz.github.io/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
@@ -77,22 +77,13 @@ const About: React.FC = () => {
                   <Github size={24} className="hover-glow" />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/devon-bastiansz" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={24} className="hover-glow" />
-                </a>
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={24} className="hover-glow" />
                 </a>
               </div>
             </div>

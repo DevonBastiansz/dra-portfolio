@@ -7,40 +7,31 @@ import TechLogo from '@/components/TechLogo';
 
 const projectsData = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-    screenshot: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop&q=80",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "Artistry",
+    description: "Web app for buying/selling arts & crafts with modern user interface and seamless shopping experience.",
+    technologies: ["React", "Next.js"],
+    screenshot: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=500&fit=crop&q=80",
+    githubUrl: "https://github.com/devonbastiansz",
+    liveUrl: "https://artistry-liard.vercel.app/",
     role: "Full-stack Developer"
   },
   {
-    title: "Task Management App",
-    description: "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
-    technologies: ["React", "TypeScript", "Redux", "Firebase", "Tailwind CSS"],
-    screenshot: "https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=800&h=500&fit=crop&q=80",
-    githubUrl: "#",
-    liveUrl: "#",
+    title: "Turtle Hatcheries Ceylon",
+    description: "HTML/CSS/JS website with booking system for turtle hatchery visits and conservation awareness.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    screenshot: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=500&fit=crop&q=80",
+    githubUrl: "https://github.com/devonbastiansz",
+    liveUrl: "https://devonbastiansz.github.io/",
     role: "Frontend Developer"
   },
   {
-    title: "Weather Dashboard",
-    description: "A responsive weather dashboard displaying current conditions and forecasts using external weather APIs.",
-    technologies: ["JavaScript", "HTML", "CSS", "OpenWeather API", "Chart.js"],
-    screenshot: "https://images.unsplash.com/photo-1563974318767-a4de855d7b43?w=800&h=500&fit=crop&q=80",
-    githubUrl: "#",
+    title: "Inventory Management System",
+    description: "C# program for inventory tracking with efficient data management and user-friendly interface.",
+    technologies: ["C#", ".NET"],
+    screenshot: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&h=500&fit=crop&q=80",
+    githubUrl: "https://github.com/devonbastiansz",
     liveUrl: "#",
-    role: "Frontend Developer"
-  },
-  {
-    title: "Social Media Analytics",
-    description: "A dashboard to track and visualize social media engagement metrics across multiple platforms.",
-    technologies: ["Next.js", "TypeScript", "D3.js", "Tailwind CSS", "REST APIs"],
-    screenshot: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=500&fit=crop&q=80",
-    githubUrl: "#",
-    liveUrl: "#",
-    role: "Full-stack Developer"
+    role: "Software Developer"
   }
 ];
 
@@ -106,7 +97,7 @@ const Projects: React.FC = () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/30"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="https://github.com/devonbastiansz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Github size={18} />
               <span>View All Projects on GitHub</span>
             </a>

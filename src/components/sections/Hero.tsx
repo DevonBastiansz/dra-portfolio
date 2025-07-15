@@ -23,14 +23,15 @@ const Hero: React.FC = () => {
       <div className="section-container relative z-10 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="gradient-text">Devon</span>
+            Hi, I'm <span className="gradient-text">Devon Bastiansz</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium mb-6 text-blue-100">
-            Computer Science Student & Web Developer
+            BSc (Hons.) Computer Science Undergraduate
           </h2>
           <p className="text-lg mb-8 text-blue-200 max-w-xl mx-auto md:mx-0">
-            Passionate about creating elegant solutions through code and design.
-            Turning complex problems into simple, beautiful, and intuitive applications.
+            Dedicated and motivated Computer Science student passionate about frontend web development, 
+            AI & machine learning solutions, and cybersecurity. Eager to contribute positively while 
+            gaining valuable industry experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button

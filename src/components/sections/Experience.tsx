@@ -4,32 +4,39 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const experienceData = [
   {
-    title: "Frontend Developer Intern",
-    company: "Tech Innovators Inc.",
-    duration: "May 2023 - Aug 2023",
-    description: "Developed and maintained responsive web applications using React, resulting in 30% faster load times."
+    title: "Front-End Developer Intern",
+    company: "Acornic Ventures - Acorn Group, Colombo 01",
+    duration: "Oct 2024 – May 2025",
+    description: "Working with React JS & TypeScript, UI/UX with Figma, Agile team workflows, corporate environment exposure, and organized TravelTech Hackathon 3.0."
   },
   {
-    title: "Web Developer",
-    company: "Campus IT Department",
-    duration: "Sep 2022 - Present",
-    description: "Redesigned the university's event portal, improving user engagement by 45% and mobile accessibility."
-  },
-  {
-    title: "Teaching Assistant",
-    company: "Computer Science Department",
-    duration: "Jan 2022 - May 2022",
-    description: "Assisted 30+ students with web development concepts and graded assignments for 'Intro to Web Development'."
+    title: "Digital Marketing Assistant (Part-Time)",
+    company: "Mars Network (Pvt) Ltd., Colombo 05",
+    duration: "Dec 2023 – Apr 2024",
+    description: "WordPress Development, Social Media Management (Meta Suite, TikTok, LinkedIn), Graphic Design (Canva, Photoshop), and Daraz E-commerce Management."
   }
 ];
 
-const educationData = {
-  degree: "BSc in Computer Science",
-  university: "University of Technology",
-  graduation: "Expected May 2025",
-  gpa: "3.8/4.0",
-  courses: ["Data Structures & Algorithms", "Web Development", "Database Systems", "Machine Learning"]
-};
+const educationData = [
+  {
+    degree: "BSc (Hons) Computer Science",
+    university: "Staffordshire University, UK (APIIT, Colombo)",
+    graduation: "Expected Graduation: 2025",
+    details: "Currently pursuing"
+  },
+  {
+    degree: "GCE Advanced Level",
+    university: "St. Joseph's College, Colombo 10",
+    graduation: "2022",
+    details: "2B passes & 1C pass (Technology Stream)"
+  },
+  {
+    degree: "GCE Ordinary Level",
+    university: "St. Joseph's College, Colombo 10",
+    graduation: "2019",
+    details: "8A passes & 1B pass"
+  }
+];
 
 const Experience: React.FC = () => {
   return (
@@ -83,25 +90,22 @@ const Experience: React.FC = () => {
               Education
             </h3>
             
-            <Card className="glass-effect border-blue-800/50">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                  <h4 className="text-xl font-medium text-blue-100">{educationData.degree}</h4>
-                  <span className="text-sm text-blue-300">{educationData.graduation}</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <p className="text-blue-300">{educationData.university}</p>
-                  <p className="text-blue-300">GPA: {educationData.gpa}</p>
-                </div>
-                
-                <h5 className="text-lg font-medium text-blue-200 mb-3">Relevant Coursework</h5>
-                <div className="flex flex-wrap gap-2">
-                  {educationData.courses.map((course, index) => (
-                    <span key={index} className="skill-tag">{course}</span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              {educationData.map((edu, index) => (
+                <Card key={index} className="glass-effect border-blue-800/50">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                      <h4 className="text-xl font-medium text-blue-100">{edu.degree}</h4>
+                      <span className="text-sm text-blue-300">{edu.graduation}</span>
+                    </div>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                      <p className="text-blue-300">{edu.university}</p>
+                      <p className="text-blue-300">{edu.details}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
             
             <div className="mt-10">
               <h3 className="text-2xl font-semibold mb-8 text-blue-100 flex items-center">
@@ -115,12 +119,12 @@ const Experience: React.FC = () => {
               
               <div className="space-y-4">
                 <div className="glass-effect border-blue-800/50 rounded-lg p-5">
-                  <h4 className="text-lg font-medium text-blue-100">Full Stack Web Development</h4>
-                  <p className="text-blue-300">FreeCodeCamp - Dec 2022</p>
+                  <h4 className="text-lg font-medium text-blue-100">Languages</h4>
+                  <p className="text-blue-300">English – Fluent | Sinhala – Fluent</p>
                 </div>
                 <div className="glass-effect border-blue-800/50 rounded-lg p-5">
-                  <h4 className="text-lg font-medium text-blue-100">React Developer Certification</h4>
-                  <p className="text-blue-300">Meta - Mar 2023</p>
+                  <h4 className="text-lg font-medium text-blue-100">Key Skills</h4>
+                  <p className="text-blue-300">Attention-to-detail • Time management • Collaboration & Teamwork</p>
                 </div>
               </div>
             </div>

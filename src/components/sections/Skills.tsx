@@ -7,24 +7,20 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 
 const skillCategories = [
   {
-    category: "Languages",
-    skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "HTML", "CSS"]
+    category: "Frontend Development",
+    skills: ["React", "TypeScript", "HTML", "CSS", "JavaScript", "WordPress"]
   },
   {
-    category: "Web Development",
-    skills: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "Material UI", "SASS", "Redux"]
+    category: "Programming Languages",
+    skills: ["Java", "C#"]
   },
   {
-    category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "VS Code", "Docker", "AWS", "Firebase", "Netlify", "Vercel"]
+    category: "Design & Tools",
+    skills: ["Figma", "Canva", "Photoshop"]
   },
   {
-    category: "Databases",
-    skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase Firestore", "Redis"]
-  },
-  {
-    category: "Design",
-    skills: ["Figma", "Adobe XD", "Responsive Design", "UI/UX Principles", "Accessibility"]
+    category: "Other",
+    skills: ["Social Media Management", "E-commerce Management", "Agile Workflows"]
   }
 ];
 

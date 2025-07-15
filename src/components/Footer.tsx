@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Social Links */}
           <div className="flex space-x-6 mb-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/devonbastiansz" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
@@ -19,22 +19,13 @@ const Footer: React.FC = () => {
               <Github size={24} className="hover-glow" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/devon-bastiansz" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} className="hover-glow" />
-            </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:text-white transition-all duration-300 hover:scale-110 transform"
-              aria-label="Twitter"
-            >
-              <Twitter size={24} className="hover-glow" />
             </a>
           </div>
           
@@ -58,7 +49,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Copyright */}
-          <p className="text-sm text-blue-400">© {new Date().getFullYear()} Devon. All rights reserved.</p>
+          <p className="text-sm text-blue-400">© {new Date().getFullYear()} Devon Bastiansz. All rights reserved.</p>
         </div>
       </div>
     </footer>
