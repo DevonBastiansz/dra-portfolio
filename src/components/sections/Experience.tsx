@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
       <div className="section-container relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center gradient-text">Experience & Education</h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 gap-16">
           {/* Work Experience */}
           <div>
             <h3 className="text-2xl font-semibold mb-8 text-blue-100 flex items-center">
@@ -106,26 +106,27 @@ const Experience: React.FC = () => {
                 </Card>
               ))}
             </div>
+          </div>
+          
+          {/* Certifications */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-8 text-blue-100 flex items-center">
+              <span className="h-8 w-8 rounded-full bg-blue-700 flex items-center justify-center mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              Certifications
+            </h3>
             
-            <div className="mt-10">
-              <h3 className="text-2xl font-semibold mb-8 text-blue-100 flex items-center">
-                <span className="h-8 w-8 rounded-full bg-blue-700 flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </span>
-                Certifications
-              </h3>
-              
-              <div className="space-y-4">
-                <div className="glass-effect border-blue-800/50 rounded-lg p-5">
-                  <h4 className="text-lg font-medium text-blue-100">Languages</h4>
-                  <p className="text-blue-300">English – Fluent | Sinhala – Fluent</p>
-                </div>
-                <div className="glass-effect border-blue-800/50 rounded-lg p-5">
-                  <h4 className="text-lg font-medium text-blue-100">Key Skills</h4>
-                  <p className="text-blue-300">Attention-to-detail • Time management • Collaboration & Teamwork</p>
-                </div>
+            <div className="space-y-4">
+              <div className="glass-effect border-blue-800/50 rounded-lg p-5">
+                <h4 className="text-lg font-medium text-blue-100">Languages</h4>
+                <p className="text-blue-300">English – Fluent | Sinhala – Fluent</p>
+              </div>
+              <div className="glass-effect border-blue-800/50 rounded-lg p-5">
+                <h4 className="text-lg font-medium text-blue-100">Key Skills</h4>
+                <p className="text-blue-300">Attention-to-detail • Time management • Collaboration & Teamwork</p>
               </div>
             </div>
           </div>
